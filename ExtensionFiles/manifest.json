@@ -1,0 +1,16 @@
+{
+	"name": "Clearpass autofill no answers",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "Autofill the no answers for Clearpass",
+	"permissions": [],
+	"content_scripts": [
+		{
+			"matches": [
+				"https://www.myhealthbox.net/clearpass/questionnaire"
+			],
+			"js": ["jquery-2.2.2.min.js", "index.js"],
+			"run_at": "document_end"
+		}
+	]
+}
